@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('Images/helen-thomas-GYwI6WeTDXY-unsplash.jpg');
+            background-color: #cccccc;
+            /* Used if the image is unavailable */
+            height: px;
+            /* You must set a specified height */
+            background-position: center;
+            /* Center the image */
+            background-repeat: no-repeat;
+            /* Do not repeat the image */
+            background-size: cover;
+            /* Resize the background image to cover the entire container */
+
+        }
+    </style>
+</head>
+</head>
+
+<body>
+
+
+
+    <div class="navbar">
+        <ul>
+            <li id="title"><a href="">Body Mass Index Calculator</a></li>
+            <li id="content"><a href="">About</a></li>
+            <li id="content"><a href="">Contact</a></li>
+            <li id="content"><a href="">News</a></li>
+            <div class="dropdown">
+                <li id="content" class="service content"><a href="">Service</a>
+                    <i class="fa fa-caret-down"></i>
+                <br>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </li>
+                </div>
+        </ul>
+    </div>
+    </div>
+
+    <!--  <h1 class="heading">Body Mass Index Calculator</h1>-->
+    <div class="defination">
+        <p>Body Mass Index (BMI) is a measure that uses a person's height and weight to estimate body fat and assess
+            whether someone is underweight, healthy weight, overweight, or obese.</p>
+    </div>
+    <table class="criteria">
+        <tr>
+            <th>BMI (Kg/m&sup2)</th>
+            <th id="head">Interpretation</th>
+        </tr>
+        <tr>
+            <td> &lt 18.5 </td>
+            <td id="interpret">Underweight</td>
+        </tr>
+        <tr>
+            <td>18.5-24.9</td>
+            <td id="interpret">Normal</td>
+        </tr>
+        <tr>
+            <td>25-29.9</td>
+            <td id="interpret">Over Weight</td>
+        </tr>
+        <tr>
+            <td>&#8805 30</td>
+            <td id="interpret">Obese</td>
+        </tr>
+        <tr>
+            <td>30-34.9</td>
+            <td>Class 1 Obese</td>
+        </tr>
+        <tr>
+            <td>35-39.9</td>
+            <td>Class 2 Obese</td>
+        </tr>
+        <tr>
+            <td>&#8805 40</td>
+            <td>Class 3 Obese</td>
+        </tr>
+    </table>
+    <div class="initiate">
+        <p><u>Let's Calculate your BMI</u></p>
+    </div>
+    <div class="container-form">
+        <form class="input_values">
+            <div class="div1">
+                <label for="age">Enter your age:</label><br>
+                <input type="number" id="agee" min="1" max="100" value=""><br>
+                <label for="weight">Enter your weight(Kg):</label><br>
+                <input type="number" id="pweight" name="weight" min="10" max="200" step=".01" value=""><br>
+                <label for="height">Enter your height(Meter):</label><br>
+                <input type="number" id="pheight" name="weight" min="0" max="30" step=".01"><br><br>
+            </div>
+        </form>
+    </div>
+    <div class="submitbtn">
+        <input type="submit" value="Submit" id="submitb">
+        <input type="reset" value="Reset">
+    </div>
+
+    <div class="bmiCalc">
+        <p id="bmiV">Your Body Mass Index is: </p>
+        <p id="bmiS">Your Weight status is:</p>
+    </div>
+    <div class="tips">
+        <h2><u>BMI Categories and Health Risks:</u></h2>
+        <p>Underweight (BMI &lt; 18.5): May experience nutritional deficiencies and other health problems.</p>
+        <p>Healthy Weight (BMI 18.5-24.9): Considered a healthy weight range with minimal health risks. </p>
+        <p>Overweight (BMI 25-29.9): May have an increased risk of developing health problems like heart disease and
+            type 2 diabetes. </p>
+        <p>Obese (BMI 30 or higher): Significantly increased risk of developing serious health conditions. </p>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
